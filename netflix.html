@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-image: url(https://singh-cp.github.io/netflix-landingpage/images/netflix-background-image.jpg);
+            background-size: cover;
+        }
+
+        body>div {
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header {
+            padding-top: 20px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            justify-content: space-around;
+
+        }
+
+        .title {
+            font-weight: bold;
+            color: red;
+            font-size: 40px;
+            font-family: Arial;
+        }
+
+        .head-language {
+            font-size: 25px;
+        }
+
+        select {
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            padding: 5px;
+            border: none;
+        }
+
+        option {
+            color: black;
+        }
+
+        section {
+            /* display: flex; */
+            text-align: center;
+            align-items: center;
+            /* height: 600px; */
+            color: white;
+            margin-top: 150px;
+        }
+
+        .sec-tittle {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .sec-subtitle {
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        section input {
+            border-radius: 5px;
+            padding: 10px;
+            width: 50%;
+            height: 60px;
+            font-size: 22px;
+        }
+
+        .get-start {
+            margin-top: -5px;
+            width: 200px;
+            height: 60px;
+            font-size: 22px;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            color: gray;
+            padding: 30px;
+            margin-top: 20px;
+            border-top: 8px solid gray;
+            background-color: black; 
+            padding-left: 200px;
+        }
+
+
+        .tittle-footer {
+            display: inline-block;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .tittle-footer~div {
+            display: block;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <span class="title">NETFLIX</span>
+            </div>
+            <div class="head-language">
+                <span class="bi bi-translate " style="color: white; "></span>
+                <span style="margin-right: 30px;">
+                    <select>
+                        <option>language</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                    </select>
+                </span>
+                <button type="text" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ragistration">Sign in</button>
+            </div>
+        </header>
+        <section>
+            <div class="sec-tittle">
+                Unlimited movies, TV shows and more
+            </div>
+            <div class="sec-subtitle">
+                Watch anywhere. Cancel anytime.
+            </div>
+            <div class="sec-subtitle2">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <form>
+                <div style="margin-top: 20px;">
+                    <input type="email" placeholder="enter your mail id " name="inputmail" autofocus>
+                    <button type="submit" class="btn btn-danger get-start width=20%" >Get started<span
+                            class="bi bi-arrow-right"></span></button>
+                </div>
+            </form>
+           
+            <aside class=" row justify-content-center " style="margin-top: 4%;">
+                <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+                <div class="accordion bg-dark w-50  " id="Faqs">
+                    <div class="accordion-item bg-dark">
+                        <div class="accordion-header ">
+                            <button class="accordion-button w-100" data-bs-toggle="collapse" data-bs-target="#q1">What
+                                is Netflix?</button>
+                        </div>
+                        <div class="accodion-collapse collapse" id="q1" data-bs-parent="#Faqs">
+                            <div class="accordion-body  bg-dark text-white">
+                                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                    movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                </p>
+
+                                <p>You can watch as much as you want, whenever you want, without a single ad – all for
+                                    one low monthly price. There's always something new to discover, and new TV shows
+                                    and movies are added every week!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <div class="accordion-header">
+                            <button class="accordion-button w-100" data-bs-toggle="collapse" data-bs-target="#q2">How
+                                much does netflix cost?</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="q2" data-bs-parent="#Faqs">
+                            <div class="accordion-body bg-dark text-white">
+                                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                    movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                </p>
+
+                                <p>You can watch as much as you want, whenever you want, without a single ad – all for
+                                    one low monthly price. There's always something new to discover, and new TV shows
+                                    and movies are added every week!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q3">Where can I
+                                watch?</button>
+                        </div>
+                        <div class="accodion-collapse collapse" id="q3" data-bs-parent="#Faqs">
+                            <div class="accordion-body text-white">
+                                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the
+                                    web at netflix.com from your personal computer or on any internet-connected device
+                                    that offers the Netflix app, including smart TVs, smartphones, tablets, streaming
+                                    media players and game consoles.
+
+                                    You can also download your favourite shows with the iOS, Android, or Windows 10 app.
+                                    Use downloads to watch while you're on the go and without an internet connection.
+                                    Take Netflix with you anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q4">How can I
+                                cancle?</button>
+                        </div>
+                        <div class="accodion-collapse collapse" id="q4" data-bs-parent="#Faqs">
+                            <div class="accordion-body text-white">
+                                <p>WNetflix is flexible. There are no annoying contracts and no commitments. You can
+                                    easily cancel your account online in two clicks. There are no cancellation fees –
+                                    start or stop your account anytime.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q5">What can i watch on netflix?</button>
+                        </div>
+                        <div class="accodion-collapse collapse" id="q5" data-bs-parent="#Faqs">
+                            <div class="accordion-body text-white">
+                                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the
+                                    web at netflix.com from your personal computer or on any internet-connected device
+                                    that offers the Netflix app, including smart TVs, smartphones, tablets, streaming
+                                    media players and game consoles.
+
+                                    You can also download your favourite shows with the iOS, Android, or Windows 10 app.
+                                    Use downloads to watch while you're on the go and without an internet connection.
+                                    Take Netflix with you anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <form>
+            <div class="modal text-dark modal-dismissible fade" id="ragistration" >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                           <h2><span class="bi bi-person-fill me-3"></span>enter your details</h2>
+                           <button class="btn btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <dl>
+                                <dt>User Name</dt>
+                                <dd  ><input type="text" name="username" class="form-control"></dd>
+                                <dt> password</dt>
+                                <dd><input type="password" class="form-control" name="password"></dd>
+                            </dl>
+                        </div>
+                        <div class="modal-footer">
+                            <span><button class=" btn btn-danger">Cancle</button></span>
+                            <span><button class="btn btn-success">submit</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <footer>
+
+            <div>
+                <div class="tittle-footer">Questions? Call 000-800-919-1694</div>
+                <div>Faqs</div>
+                <div>Investor Relations</div>
+                <div>Privacy</div>
+                <div>speed test</div>
+            </div>
+            <div>
+                <div class="tittle-footer">Help Centre</div>
+                <div>Jobs</div>
+                <div>cookies</div>
+                <div>Legal Notices</div>
+            </div>
+            <div>
+                <div class="tittle-footer">Account</div>
+                <div>Only on Netflix</div>
+                <div>Ways to Watch</div>
+            </div>
+            <div>
+                <div class="tittle-footer">Media Centre</div>
+                <div>terms of uses</div>
+                <div>Contact Us</div>
+            </div>
+        </footer>
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
